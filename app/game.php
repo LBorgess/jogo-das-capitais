@@ -10,7 +10,7 @@ if (isset($_GET['answer'])) {
     $answer_given = $_SESSION['questions'][$current_question]['answers'][$answer];
 
     // Verifica questão está correta
-    if ($answer_given == $_SESSION['questions'][$current_question]['correct_answers']) {
+    if ($answer_given == $_SESSION['questions'][$_SESSION['game']['current_question']]['correct_answer']) {
         $_SESSION['game']['correct_answers']++;
     } else {
         $_SESSION['game']['incorrect_answers']++;
@@ -47,7 +47,7 @@ $answers = $_SESSION['questions'][$current_question]['answers'];
                 <h3 class="text-center mb-3">Jogo das Capitais</h3>
                 <div class="row">
                     <div class="col">
-                        <h5 class="text-success">Questão n.° <strong> <?= $current_question + 1 ?> / <?= $total_questions ?></strong></h5>
+                        <h5 class="text-success">Questão n.° <strong> <?= $current_question + 1 . ' / ' . $total_questions ?> </strong></h5>
                     </div>
                     <div class="col d-flex justify-content-end">
                         <h4>Corretas: <strong class="text-success"><?= $correct_answers ?></strong></h4>
