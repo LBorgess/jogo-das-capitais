@@ -2,7 +2,7 @@
 
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 
-O jogo das capitais é um jogo de questionário desenvolvido utilizando a linguagem de programação PHP. 
+O jogo das capitais é um questionário desenvolvido utilizando a linguagem de programação PHP. 
 
 ## Objetivo
 
@@ -13,6 +13,7 @@ O objetivo do jogo é acertar o maior número de capitais de países do mundo, o
 Nessa seção é apresentado o modo de utilização da aplicação e instalação.
 
 ### Requisitos
+
 Necessário que tenha em sua máquina o PHP na versão 8 ou superior e, se necessário, a utilização de algum servidor.
 
 ### Instalação
@@ -20,7 +21,7 @@ Necessário que tenha em sua máquina o PHP na versão 8 ou superior e, se neces
 Realize o clone do repositório com o seguinte comando:
 
 ```bash
-git clone 
+git clone https://github.com/LBorgess/jogo-das-capitais.git
 ```
 
 ### Execução
@@ -29,6 +30,12 @@ Se possuir o PHP como uma variável de ambiente em seu sistema operacional, util
 
 ```php
 php -S localhost:8080
+```
+
+Após isso acesse o endereço
+
+```bash
+localhost:8080
 ```
 
 Caso utilize algum servidor similar ao Apacha, mova a repositório clonado para dentro da pasta que o servidor utiliza como raíz, por exemplo pasta `htdocs` para XAMPP ou `www` para no caso do Laragon.
